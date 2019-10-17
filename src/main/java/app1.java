@@ -1,3 +1,6 @@
+import java.lang.*;
+
+
 public class app1 {
     //psvm
     public static void main(String[] args) {
