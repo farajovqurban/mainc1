@@ -1,4 +1,4 @@
-package homework;
+package homework.hw2;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,17 +17,16 @@ public class homework_2 {
             System.out.println();
         }
 
-
-
         Random rand = new Random();
         int ranrow = rand.nextInt(5) + 1;
         int rancol = rand.nextInt(5) + 1;
         System.out.println(ranrow + " " + rancol);
+        Scanner scn = new Scanner(System.in);
 
-            Scanner scn = new Scanner(System.in);
-
-            while(true) {
+        while(true) {
+                System.out.println("Enter row: ");
                 int inrow = scn.nextInt();
+                System.out.println("Enter column: ");
                 int incol = scn.nextInt();
 
                 if (inrow == ranrow && incol == rancol) {
@@ -35,33 +34,17 @@ public class homework_2 {
                     break;
                 }
                 else {
-                    System.out.println("try again");
-
-                    for (int i = 0; i < array1.length; i++) {
-                        for (int j = 0; j < row; j++) {
-
+                    System.out.println("Try again");
+                    for (int i = 0; i < array1.length-1; i++) {
+                        for (int j = 0; j < array1.length-1; j++) {
                             array1[i][j] = '-';
                             array1[inrow][incol] = '*';
                             System.out.print(array1[i][j]);
-
                         }
 
                         System.out.println();
                     }
-
-                    }
+                }
             }
-
         }
-
-
-
-
-
-
-
-
-
-
-
-        }
+}
