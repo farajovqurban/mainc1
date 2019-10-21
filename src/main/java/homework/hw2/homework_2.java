@@ -18,30 +18,40 @@ public class homework_2 {
         }
 
         Random rand = new Random();
-        int ranrow = rand.nextInt(5) + 1;
-        int rancol = rand.nextInt(5) + 1;
-        System.out.println(ranrow + " " + rancol);
+        int randomRow = rand.nextInt(5) + 1;
+        int randomColumn = rand.nextInt(5) + 1;
+        System.out.println(randomRow + " " + randomColumn);
         Scanner scn = new Scanner(System.in);
 
         while(true) {
                 System.out.println("Enter row: ");
-                int inrow = scn.nextInt();
+                int inputRow = scn.nextInt();
                 System.out.println("Enter column: ");
-                int incol = scn.nextInt();
+                int inputColumn = scn.nextInt();
 
-                if (inrow == ranrow && incol == rancol) {
+                if (inputRow == randomRow && inputColumn == randomColumn) {
+                    for (int i = 0; i < array1.length; i++) {
+                        for (int j = 0; j < array1.length; j++) {
+                            array1[i][j] = '-';
+                            array1[inputRow - 1][inputColumn - 1] = 'X';
+                            System.out.print(array1[i][j]);
+                        }
+                        System.out.println();
+                    }
+
                     System.out.println("You have won!");
                     break;
+
+
                 }
                 else {
                     System.out.println("Try again");
-                    for (int i = 0; i < array1.length-1; i++) {
-                        for (int j = 0; j < array1.length-1; j++) {
+                    for (int i = 0; i < array1.length; i++) {
+                        for (int j = 0; j < array1.length; j++) {
                             array1[i][j] = '-';
-                            array1[inrow][incol] = '*';
+                            array1[inputRow - 1][inputColumn - 1] = '*';
                             System.out.print(array1[i][j]);
                         }
-
                         System.out.println();
                     }
                 }
