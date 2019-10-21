@@ -17,6 +17,7 @@ public class homework_2 {
             System.out.println();
         }
 
+
         Random rand = new Random();
         int randomRow = rand.nextInt(5) + 1;
         int randomColumn = rand.nextInt(5) + 1;
