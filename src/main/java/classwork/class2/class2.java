@@ -6,7 +6,7 @@ public class class2 {
     public static int[] filter_neg(int[] origin){
         int[] result = new int[origin.length];
         int pos = 0;
-        for (int val: origin /*=  int i=0; i<origin; i++  ) {
+        for (int val: origin =  int i=0; i<origin; i++  ) {
             if (val < 0)  result[pos++] = val;
         }
 
@@ -26,8 +26,7 @@ public class class2 {
     public static void main(String[] args) {
         //Random ranum1 = new Random();
 
-        int min = -5;
-        int max = 5;
+        int min = -5;        int max = 5;
         int length = 20;
         int range = max - min;
 

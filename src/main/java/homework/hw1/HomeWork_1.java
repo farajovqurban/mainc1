@@ -17,7 +17,8 @@ public class HomeWork_1 {
             if (randomNumber == inputNumber) {
                 System.out.println("Congratulations, " + name + "!");
                 break;
-            } else if (inputNumber < randomNumber) System.out.println("Your number is too small. Please, try again.");
+            }
+            else if (inputNumber < randomNumber) System.out.println("Your number is too small. Please, try again.");
             else System.out.println("Your number is too big. Please, try again.");
         }
     }

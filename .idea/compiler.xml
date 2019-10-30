@@ -9,8 +9,6 @@
         <module name="mainc1" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mainc1" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="13" />
   </component>
 </project>
